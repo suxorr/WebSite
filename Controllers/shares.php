@@ -2,6 +2,7 @@
 class Shares extends Controller {
 	
 	protected function Index(){
-		echo 'Shares/Index';
+		$viewModel = new ShareModel();
+		$this->returnView($viewModel->Index(), true);
 	}
 }
